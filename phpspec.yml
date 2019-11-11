@@ -1,0 +1,4 @@
+suites:
+  library_suite:
+    namespace: ND\SweetAlert2
+    psr4_prefix: ND\SweetAlert2

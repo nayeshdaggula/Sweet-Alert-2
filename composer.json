@@ -1,0 +1,34 @@
+{
+    "name": "nayeshdaggula/sweetalert2",
+    "description": "A simple PHP package to show Sweet Alerts with the Laravel Framework",
+    "keywords": ["laravel", "alert", "sweet", "notifier"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nayesh daggula",
+            "email": "nayeshdgagula@hotmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "ND\\SweetAlert2\\": "src/SweetAlert/"
+        },
+        "files": [
+            "src/SweetAlert/functions.php"
+        ]
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0",
+        "mockery/mockery": "0.9.*"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ND\\SweetAlert2\\SweetAlertServiceProvider"
+            ],
+            "aliases": {
+                "Sweetalert": "ND\\SweetAlert2\\SweetAlert"
+            }
+        }
+    }
+}
